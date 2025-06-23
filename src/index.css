@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-color:#F4EBDC;
+    height: 100% ;
+}
+
+body{
+    font-family:sans-serif ;
+    background:#F4EBDC;
+}
