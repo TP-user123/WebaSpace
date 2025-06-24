@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Template from '../Pages/Template';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async"; // Import Helmet for SEO
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -19,6 +20,12 @@ const fadeInUp = {
 const Home = () => {
   return (
     <div className="bg-[#F4EBDC] text-gray-800 font-sans">
+       <Helmet>
+        <title>WebaSpace | Affordable Business Websites</title>
+        <meta name="description" content="Launch your business online with ready-to-use responsive templates. Fast, modern & mobile-friendly." />
+        <meta name="keywords" content="website templates, small business websites, WebaSpace, bakery website, fashion store website, React landing page" />
+        <link rel="canonical" href="https://webaspace.netlify.app/" />
+      </Helmet>
       <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 py-20 gap-10">
   {/* Text Section */}
   <div className="md:w-1/2 flex flex-col items-center text-center space-y-6">

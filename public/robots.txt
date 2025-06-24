@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webaspace.netlify.app/sitemap.xml

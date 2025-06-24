@@ -1,9 +1,16 @@
 import React from 'react';
 import { Mail, Instagram } from 'lucide-react';
+import { Helmet } from 'react-helmet-async'; // Import Helmet for SEO
 
 export default function ContactPage() {
   return (
     <section className="max-w-4xl mx-auto py-16 px-6">
+      <Helmet>
+        <title>WebaSpace | Affordable Business Websites</title>
+        <meta name="description" content="Launch your business online with ready-to-use responsive templates. Fast, modern & mobile-friendly." />
+        <meta name="keywords" content="website templates, small business websites, WebaSpace, bakery website, fashion store website, React landing page" />
+        <link rel="canonical" href="https://webaspace.netlify.app/" />
+      </Helmet>
       <div className="text-center mb-10">
         <h2 className="text-4xl font-extrabold mb-4 text-gray-800">
           Get in Touch with <span className="text-primary">WebaSpace</span>

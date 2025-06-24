@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
+import { Helmet } from 'react-helmet-async'; // Import Helmet for SEO
 const templates = [
   {
     title: "Bakery Website Template",
     description: "A sweet and modern layout tailored for bakeries and cafes.",
-    videoSrc: "src/assets/Bakery templete - Made with Clipchamp.mp4",
+    videoSrc: "https://res.cloudinary.com/dwwozqlzs/video/upload/iyws8de8ulkvuuqs637j.mp4",   
   },
   {
     title: "Clothing Store Template",
     description: "A stylish and responsive fashion store homepage design.",
-    videoSrc: "src/assets/landingPagebyAK.mp4",
+    videoSrc: "https://res.cloudinary.com/dwwozqlzs/video/upload/ozcwt2fpnxporktjwmze.mp4", 
   },
   {
     title: "Gifts & Crafts Template",
     description: "Perfect for handmade gift shops or local creative businesses.",
-    videoSrc: "src/assets/Customise products - Made with Clipchamp.mp4",
+    videoSrc: "https://res.cloudinary.com/dwwozqlzs/video/upload/yuexsusu5woqtmloxeei.mp4", 
   },
 ];
+
 
 export default function Template() {
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -25,6 +26,12 @@ export default function Template() {
   return (
     <>
       <section className="max-w-7xl mx-auto px-6 py-12">
+         <Helmet>
+        <title>WebaSpace | Affordable Business Websites</title>
+        <meta name="description" content="Launch your business online with ready-to-use responsive templates. Fast, modern & mobile-friendly." />
+        <meta name="keywords" content="website templates, small business websites, WebaSpace, bakery website, fashion store website, React landing page" />
+        <link rel="canonical" href="https://webaspace.netlify.app/" />
+      </Helmet>
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Templates Preview</h2>
 
         {/* FIXED: flex-wrap layout for side-by-side display on large screens */}

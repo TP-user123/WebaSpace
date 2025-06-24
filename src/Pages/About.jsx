@@ -1,9 +1,16 @@
 import React from "react";
 import logo from "../../public/webaspace.jpg"; // Adjust the path as necessary
+import { Helmet } from "react-helmet-async"; // Import Helmet for SEO
 
 function About() {
   return (
     <div className="bg-[#F4EBDC] text-gray-800 font-sans">
+       <Helmet>
+        <title>WebaSpace | Affordable Business Websites</title>
+        <meta name="description" content="Launch your business online with ready-to-use responsive templates. Fast, modern & mobile-friendly." />
+        <meta name="keywords" content="website templates, small business websites, WebaSpace, bakery website, fashion store website, React landing page" />
+        <link rel="canonical" href="https://webaspace.netlify.app/" />
+      </Helmet>
       {/* Hero Section */}
       <section className="text-center py-16 px-6">
         <img

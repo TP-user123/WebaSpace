@@ -6,9 +6,11 @@ import About from "./Pages/About";
 import Service from "./Pages/Service";
 import ContactPage from "./Pages/ContactPage";
 import Template from "./Pages/Template";  
+import { HelmetProvider } from "react-helmet-async";  
 function App() {
   return (
    <>
+   <HelmetProvider>
    <Router>
       <Navbar />
       <Routes>
@@ -21,6 +23,7 @@ function App() {
       </Routes>
    
    </Router>
+    </HelmetProvider>
    </>
   );
 }

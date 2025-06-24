@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async'; // Import Helmet for SEO
 
 const services = [
   {
@@ -32,6 +33,12 @@ const services = [
 export default function ServicesPage() {
   return (
     <section className="max-w-7xl mx-auto py-16 px-6">
+       <Helmet>
+        <title>WebaSpace | Affordable Business Websites</title>
+        <meta name="description" content="Launch your business online with ready-to-use responsive templates. Fast, modern & mobile-friendly." />
+        <meta name="keywords" content="website templates, small business websites, WebaSpace, bakery website, fashion store website, React landing page" />
+        <link rel="canonical" href="https://webaspace.netlify.app/" />
+      </Helmet>
       <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
